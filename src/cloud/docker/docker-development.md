@@ -1,15 +1,18 @@
 ---
 group: cloud-guide
-title: Local development using Docker
+title: Docker development
 functional_areas:
   - Cloud
   - Docker
   - Configuration
 ---
 
-In a local development environment, you can write and test code prior to pushing it to an Integration environment for further testing and deployment to Staging and Production. You must develop in a local workspace using a cloned Integration environment and push changes to the remote, read-only {{site.data.var.ece}} Git repository.
+{{site.data.var.ece}} provides a Docker environment option for those who use their local environment for development, test, or automation tasks. The {{site.data.var.ece}} Docker environment requires three, essential components: a {{site.data.var.ee}} v2 template, Docker Compose, and the {{site.data.var.ece}} `{{site.data.var.ct}}` package.
 
-{{site.data.var.ece}} provides a Docker environment option for those who use their local environment for development, test, or automation tasks. The {{site.data.var.ece}} Docker environment requires three, essential components: a {{site.data.var.ee}} v2 template, the Docker Compose tool, and the {{site.data.var.ece}} `{{site.data.var.ct}}` package.
+Building the docker environment is easy once you have the configuration in place, for details see the instructions in [Launch Docker]({{ site.baseurl }}/cloud/docker/docker-config.html).
+
+## Host Operating Systems
+The Cloud Docker environment supports Linux and Mac, and can be used on Windows as well. The containers should be able to run on any docker host, but some of the set up scripts require PHP and composer to be installed.
 
 ## Gather credentials
 
